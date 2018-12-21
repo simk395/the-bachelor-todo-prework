@@ -51,4 +51,16 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-end
+  i, j, l = 0, 0, 0
+  data.each do |which_season, people|
+    if which_season == season
+      people.each do |bio, info|
+        j += bio["age"].to_i
+        i += 1
+      end#people
+    end#if
+  end#data
+  l = j/i
+  l
+  end
+end#def
