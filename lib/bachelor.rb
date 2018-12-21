@@ -5,7 +5,8 @@ def get_first_name_of_season_winner(data, season)
     if which_season == season
       people.each do |info, value|
         if info["status"] == "Winner"
-        return info
+          return info
+        end
       end#people
     end#if
   end#data
